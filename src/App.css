@@ -50,10 +50,10 @@ body {
 }
 
 .App-filter-card {
-  width: 18rem;
+  width: 15rem;
   margin-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin-left:30px;
+  margin-left: 30px;
 }
 
 .App-filter-header {

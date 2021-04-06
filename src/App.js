@@ -119,7 +119,7 @@ class App extends Component {
           </Row>
           
           <Row className="Filter_List">
-          <Col md={4} lg={4}>
+          <Col xs={12} sm={6} md={4} lg={4}>
           <Card className="App-filter-card">
                   <Card.Body>
                       <Card.Title className="App-filter-heading-launch-year">
@@ -160,7 +160,7 @@ class App extends Component {
                     </Card>
           </Col>
 
-          <Col md={4} lg={4}>
+          <Col xs={12} sm={6}  md={4} lg={4}>
           <Card className="App-filter-card">
                   <Card.Body>
                       <Card.Title className="App-filter-heading-launch-year">
@@ -211,7 +211,7 @@ class App extends Component {
                     </Card>
           </Col>
 
-          <Col md={4} lg={4}>
+          <Col xs={12} sm={6} md={4} lg={4}>
           <Card className="App-filter-card">
                   <Card.Body>
                       <Card.Title className="App-filter-heading-launch-year">
@@ -263,7 +263,7 @@ class App extends Component {
                 <Row>
                   {data.map((details) => {
                     return (
-                      <Col md={12} lg={3}>
+                      <Col xs={12} sm={6} md={6} lg={3}>
                         <RocketLaunchDetails details={details} />
                       </Col>
                     );
