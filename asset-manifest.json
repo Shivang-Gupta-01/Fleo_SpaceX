@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Fleo_SpaceX/static/css/main.7876cc36.chunk.css",
+    "main.js": "/Fleo_SpaceX/static/js/main.c65dfd68.chunk.js",
+    "main.js.map": "/Fleo_SpaceX/static/js/main.c65dfd68.chunk.js.map",
+    "runtime-main.js": "/Fleo_SpaceX/static/js/runtime-main.48c088f2.js",
+    "runtime-main.js.map": "/Fleo_SpaceX/static/js/runtime-main.48c088f2.js.map",
+    "static/css/2.f6d03aaa.chunk.css": "/Fleo_SpaceX/static/css/2.f6d03aaa.chunk.css",
+    "static/js/2.f845092f.chunk.js": "/Fleo_SpaceX/static/js/2.f845092f.chunk.js",
+    "static/js/2.f845092f.chunk.js.map": "/Fleo_SpaceX/static/js/2.f845092f.chunk.js.map",
+    "index.html": "/Fleo_SpaceX/index.html",
+    "precache-manifest.ba20d4be882f4f8824ba4d96e3b0f3a6.js": "/Fleo_SpaceX/precache-manifest.ba20d4be882f4f8824ba4d96e3b0f3a6.js",
+    "service-worker.js": "/Fleo_SpaceX/service-worker.js",
+    "static/css/2.f6d03aaa.chunk.css.map": "/Fleo_SpaceX/static/css/2.f6d03aaa.chunk.css.map",
+    "static/css/main.7876cc36.chunk.css.map": "/Fleo_SpaceX/static/css/main.7876cc36.chunk.css.map",
+    "static/js/2.f845092f.chunk.js.LICENSE.txt": "/Fleo_SpaceX/static/js/2.f845092f.chunk.js.LICENSE.txt",
+    "static/media/rocket.gif": "/Fleo_SpaceX/static/media/rocket.0ff414b4.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.48c088f2.js",
+    "static/css/2.f6d03aaa.chunk.css",
+    "static/js/2.f845092f.chunk.js",
+    "static/css/main.7876cc36.chunk.css",
+    "static/js/main.c65dfd68.chunk.js"
+  ]
+}
