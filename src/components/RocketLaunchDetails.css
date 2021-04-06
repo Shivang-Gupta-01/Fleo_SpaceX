@@ -2,7 +2,8 @@
     width: 18rem;
     padding: 1rem;
     margin-bottom: 15px;
-    background-color:  rgb(140, 187, 230);
+    background-color: #FFF1D0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .Rocket-mission-image {
@@ -10,11 +11,12 @@
 }
 
 .Rocket-mission-name-flight-number {
-    color: #fd0000;
+    color: blue;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .Rocket-detail-label {
