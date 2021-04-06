@@ -6,6 +6,9 @@ body {
   background-color: #F2A65A;
 }
 
+.Filter-List{
+ margin-top: 30px;
+}
 .App-loader-container {
   min-height: 100vh;
   display: flex;
@@ -32,15 +35,14 @@ body {
 }
 
 .App-header {
-  display: flex;
-  flex-direction: column;
   font-size: calc(22px + 2vmin);
   color: #ffffff;
   background-color: #11151C;
   text-align: center;
-  margin-bottom:30px;
+  margin-bottom: 0px;
+  width:100%;
   font-family: 'Times New Roman', Times, serif;
-  padding:50px;
+  padding: 20px 0px;
 }
 
 .App-link {
@@ -51,6 +53,7 @@ body {
   width: 18rem;
   margin-bottom: 15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left:30px;
 }
 
 .App-filter-header {
@@ -77,11 +80,17 @@ body {
 }
 
 .App-filter-button-container {
-  width: 100%;
+  width:100%;
+  border-radius:2px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  top:100%;
+  left:0px;
+  z-index:1000;
+  background-color: white;
 }
 
 .App-Developers-name {
@@ -91,12 +100,14 @@ body {
 .App-filter-button {
   flex: 0 40%;
   margin: 10px;
+
 }
-.Filters{
+.Filter_List{
   padding-top:30px;
-}
-.Filters span{
-  float:right;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #11151C;
+  margin-bottom:30px;
 }
 
 @keyframes App-logo-spin {

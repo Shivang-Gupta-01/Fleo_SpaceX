@@ -114,24 +114,19 @@ class App extends Component {
 
       return (
         <div className="App">
+          <Row>
           <h1 className="App-header">SpaceX</h1>
-          <Container fluid>
-            <Row>
-              <Col xs={12} sm={12} md={6} lg={3}>
-
-                <Card className="App-filter-card">
+          </Row>
+          
+          <Row className="Filter_List">
+          <Col md={4} lg={4}>
+          <Card className="App-filter-card">
                   <Card.Body>
-                    <Card.Title className="App-filter-header">
-                      Select Your Filters  <span className="year" onClick={() => {this.toggle(this.state.isFilterOpen,"filter")}} style={{ marginBottom: '1rem' }}><IoIosArrowDropdown/></span>
-                    </Card.Title>
-                    {
-                    this.state.isFilterOpen ? 
-                    <div className="Filters">
-                      <Card.Text className="App-filter-heading-launch-year">
-                      Launch Year
+                      <Card.Title className="App-filter-heading-launch-year">
+                        Launch year
                       <span className="year" onClick={() => {this.toggle(this.state.isYearOpen,"year")}} style={{ marginBottom: '1rem' }}><IoIosArrowDropdown/></span>
                       <hr className="App-filters-hr" />
-                    </Card.Text>
+                    </Card.Title>
                     {
                     this.state.isYearOpen ? <Row>
                       <div className="App-filter-button-container">
@@ -161,13 +156,19 @@ class App extends Component {
                       </div>
                     </Row> :
                     null }
-                   
+                    </Card.Body>
+                    </Card>
+          </Col>
 
-                    <Card.Text className="App-filter-heading">
-                       Launch  <span className="Launchbtn" color="primary"  onClick={() => {this.toggle(this.state.isLaunchOpen,"launch")}} style={{ marginBottom: '1rem' }}><IoIosArrowDropdown/></span>
+          <Col md={4} lg={4}>
+          <Card className="App-filter-card">
+                  <Card.Body>
+                      <Card.Title className="App-filter-heading-launch-year">
+                        Launch Status<span className="Launchbtn" color="primary"  onClick={() => {this.toggle(this.state.isLaunchOpen,"launch")}} style={{ marginBottom: '1rem' }}><IoIosArrowDropdown/></span>
                       <hr className="App-filters-hr" />
-                    </Card.Text>
-                    {this.state.isLaunchOpen ?
+                    </Card.Title>
+                    {
+                    this.state.isLaunchOpen ?
                     <div className="App-filter-button-container">
                       <Button
                         className="App-filter-button"
@@ -205,15 +206,20 @@ class App extends Component {
                         Failure
                       </Button>
                     </div>
-                    : null}
+                    : null }
+                    </Card.Body>
+                    </Card>
+          </Col>
 
-
-                    <Card.Text className="App-filter-heading">
-                       Landing<span className="Yearbtn" color="primary"  onClick={() => {this.toggle(this.state.isLandOpen,"land")}} style={{ marginBottom: '1rem' }}><IoIosArrowDropdown/></span>
+          <Col md={4} lg={4}>
+          <Card className="App-filter-card">
+                  <Card.Body>
+                      <Card.Title className="App-filter-heading-launch-year">
+                        Land Status<span className="Launchbtn" color="primary"  onClick={() => {this.toggle(this.state.isLandOpen,"land")}} style={{ marginBottom: '1rem' }}><IoIosArrowDropdown/></span>
                       <hr className="App-filters-hr" />
-                    </Card.Text>
-                        
-                    {this.state.isLandOpen ?
+                    </Card.Title>
+                    {
+                    this.state.isLandOpen ?
                     <div className="App-filter-button-container">
                       <Button
                         className="App-filter-button"
@@ -246,17 +252,18 @@ class App extends Component {
                       </Button>
                     </div>
                   :null}
-                  </div>:null}
-                  </Card.Body>
-                </Card>
+                    </Card.Body>
+                    </Card>
+          </Col>
+          </Row>
 
-              </Col>
-
-              <Col xs={12} sm={12} md={6} lg={9}>
+          <Container fluid>
+            <Row>
+              <Col xs={12} sm={12} md={12} lg={12}>
                 <Row>
                   {data.map((details) => {
                     return (
-                      <Col md={12} lg={4}>
+                      <Col md={12} lg={3}>
                         <RocketLaunchDetails details={details} />
                       </Col>
                     );
@@ -270,7 +277,7 @@ class App extends Component {
               </h5>
             </div>
           </Container>
-        </div>
+      </div>
       );
     }
 
